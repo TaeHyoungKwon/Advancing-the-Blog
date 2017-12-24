@@ -14,7 +14,7 @@ class PostCreateUpdateSerializer(ModelSerializer):
         ]
 
 
-
+ 
 class PostListSerializer(ModelSerializer):
     class Meta:
         model = Post
@@ -24,6 +24,7 @@ class PostListSerializer(ModelSerializer):
             'slug',
             'content',
             'publish',
+            'user',
         ]
 
 
