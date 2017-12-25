@@ -35,8 +35,8 @@ from comments.models import Comment
 
 
 from .serializers import (
-    CommentSerializer
-
+    CommentSerializer,
+    CommentDetailSerializer,
 ) 
 
 
@@ -51,7 +51,8 @@ from .serializers import (
     
 class CommentDetailAPIView(RetrieveAPIView):
     queryset = Comment.objects.all()
-    serializer_class = CommentSerializer
+    serializer_class = CommentDetailSerializer
+    lookup_field = 'pk'
 
 
 # class PostUpdateAPIView(RetrieveUpdateAPIView):
