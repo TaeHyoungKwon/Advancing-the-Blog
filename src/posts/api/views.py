@@ -37,7 +37,7 @@ from .serializers import (
     PostListSerializer, 
     PostDetailSerializer,
 
-)
+) 
 
 
 class PostCreateAPIView(CreateAPIView):
